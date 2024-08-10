@@ -19,11 +19,12 @@ export default function Home() {
             <div id={'section-1'} className={'h-full bg-black overflow-visible'}>
                 <img className={'object-cover h-full mx-auto'} src={'/coming-soon-large.png'}  alt={'The Mango Tree - Coming Soon'} />
             </div>
-            <div id={'footer'} className={'flex flex-row h-40 bg-gray-900'}>
-                <div id={'box-1'} className={'text-white w-1/3'}>
-                    <h2 className={'text-2xl'}>Contact</h2>
-                </div>
-            </div>
+            {/*<div id={'footer'} className={'flex flex-row h-40 bg-gray-900'}>*/}
+            {/*    <div id={'box-1'} className={'text-white w-1/3 p-4 text-center border border-amber-500'}>*/}
+            {/*        <h2 className={'text-2xl'}>Contact Info</h2>*/}
+            {/*        <h3 className={'text-xl mt-4'}>contactus@mangotreemonty.com</h3>*/}
+            {/*    </div>*/}
+            {/*</div>*/}
         </div>
     )
 }
