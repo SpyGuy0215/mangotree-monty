@@ -12,7 +12,7 @@ export default function Home() {
                         <h2 className={'text-slate-400 hover:text-orange-400'}>About Us</h2>
                     </Link>
                 </div>
-                <div id={'small-menu'} className={'visible sm:invisible sm:w-0 sm:h-0 border border-blue-400 w-1/4'}>
+                <div id={'small-menu'} className={'visible sm:invisible sm:w-0 sm:h-0 w-1/4'}>
 
                 </div>
             </div>
