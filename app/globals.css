@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    /* dark mode scrollbar */
+    scrollbar-width: thin;
+    color-scheme: dark;
+}
