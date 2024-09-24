@@ -99,10 +99,11 @@ export default function Home() {
                 </div>
                 <div id={'box-3 hours-footer'} className={'flex flex-col w-full md:w-5/12 text-center px-2 pb-12 md:pb-0'}>
                     <h2 className={'text-3xl py-2'}>Hours of Operation</h2>
-                    <h3 className={'text-md md:text-xl pt-2 pb-1'}>Wednesday - Monday</h3>
+                    {/*<h3 className={'text-md md:text-xl pt-2 pb-1'}>Wednesday - Monday</h3>*/}
+                    <h3 className={'text-md md:text-xl pt-2 pb-1'}>Monday - Sunday</h3> {/* Special timing - Tuesday open*/}
                     <h3 className={'text-sm md:text-md py-1'}>11:30AM - 2:30PM</h3>
                     <h3 className={'text-sm md:text-md py-1'}>5:30PM - 9:30PM</h3>
-                    <h3 className={'text-md md:text-xl py-2'}>Tuesday: Closed</h3>
+                    {/*<h3 className={'text-md md:text-xl py-2'}>Tuesday: Closed</h3>*/} {/* Special timing - Tuesday open*/}
                 </div>
             </div>
         </div>

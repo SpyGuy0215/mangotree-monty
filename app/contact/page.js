@@ -86,10 +86,11 @@ export default function Contact() {
                 <div id={'hours-box'} className={'flex flex-col bg-zinc-900 pb-20 pl-10 pr-10 rounded-3xl border-2 border-zinc-200 mt-10'}>
                     <Image src={'/clock-icon.png'} alt={'Clock Icon'} width={32} height={32} className={'invert mx-auto my-10'}/>
                     <h2 className={'text-3xl py-2'}>Hours of Operation</h2>
-                    <h3 className={'text-md md:text-xl pt-2 pb-1'}>Wednesday - Monday</h3>
+                    {/*<h3 className={'text-md md:text-xl pt-2 pb-1'}>Wednesday - Monday</h3>*/}
+                    <h3 className={'text-md md:text-xl pt-2 pb-1'}>Monday - Sunday</h3> {/* Special timing - Tuesday open*/}
                     <h3 className={'text-sm md:text-md py-1'}>11:30AM - 2:30PM</h3>
                     <h3 className={'text-sm md:text-md py-1'}>5:30PM - 9:30PM</h3>
-                    <h3 className={'text-md md:text-xl py-2'}>Tuesday: Closed</h3>
+                    {/*<h3 className={'text-md md:text-xl py-2'}>Tuesday: Closed</h3>*/} {/* Special timing - Tuesday open*/}
                 </div>
             </div>
             <div id={'footer'} className={'flex flex-col mb-20 md:pb-0 pt-8 md:pt-0 md:flex-row h-60 bg-black items-center'}>
@@ -120,10 +121,11 @@ export default function Contact() {
                 </div>
                 <div id={'box-3 hours-footer'} className={'flex flex-col w-full md:w-5/12 text-center px-2 pb-12 md:pb-0'}>
                     <h2 className={'text-3xl py-2'}>Hours of Operation</h2>
-                    <h3 className={'text-md md:text-xl pt-2 pb-1'}>Wednesday - Monday</h3>
+                    {/*<h3 className={'text-md md:text-xl pt-2 pb-1'}>Wednesday - Monday</h3>*/}
+                    <h3 className={'text-md md:text-xl pt-2 pb-1'}>Monday - Sunday</h3> {/* Special timing - Tuesday open*/}
                     <h3 className={'text-sm md:text-md py-1'}>11:30AM - 2:30PM</h3>
                     <h3 className={'text-sm md:text-md py-1'}>5:30PM - 9:30PM</h3>
-                    <h3 className={'text-md md:text-xl py-2'}>Tuesday: Closed</h3>
+                    {/*<h3 className={'text-md md:text-xl py-2'}>Tuesday: Closed</h3>*/} {/* Special timing - Tuesday open*/}
                 </div>
             </div>
         </div>
