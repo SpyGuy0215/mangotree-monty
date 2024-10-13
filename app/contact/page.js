@@ -4,6 +4,7 @@ import Link from "next/link";
 import {Divide as Hamburger} from "hamburger-react";
 import {useState} from "react";
 import Footer from "@/app/components/Footer";
+import Banner from "@/app/components/Banner";
 
 export default function Contact() {
 
@@ -11,6 +12,7 @@ export default function Contact() {
 
     return(
         <div className={'h-dvh dark:[color-scheme:dark]'}>
+            <Banner/>
             <div id={'menu-container'} className={'absolute z-20 w-full h-full flex flex-col'}>
                 <div id={'top-menu'} className={'w-full h-24 absolute z-20 flex flex-row backdrop-blur-md bg-opacity-50 bg-gray-900'}>
                     <div id={'logo-container'} className={'relative aspect-square sm:ml-6'}>
