@@ -3,7 +3,7 @@ export default function Banner() {
     * This component is a banner that appears at the top of the page (above header).
     * It is used to display important information to the user.
      */
-    let isBannerVisible = true; // Turn false when not needed
+    let isBannerVisible = false; // Turn false when not needed
 
     if(isBannerVisible){
         return (
