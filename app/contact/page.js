@@ -92,7 +92,7 @@ export default function Contact() {
                     {/*<h3 className={'text-md md:text-xl pt-2 pb-1'}>Wednesday - Monday</h3>*/}
                     <h3 className={'text-md md:text-xl pt-2 pb-1'}>Monday - Sunday</h3> {/* Special timing - Tuesday open*/}
                     <h3 className={'text-sm md:text-md py-1'}>11:30AM - 2:30PM</h3>
-                    <h3 className={'text-sm md:text-md py-1'}>5:30PM - 9:30PM</h3>
+                    <h3 className={'text-sm md:text-md py-1'}>5:00PM - 9:30PM</h3>
                     {/*<h3 className={'text-md md:text-xl py-2'}>Tuesday: Closed</h3>*/} {/* Special timing - Tuesday open*/}
                 </div>
             </div>
