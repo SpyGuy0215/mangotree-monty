@@ -78,8 +78,9 @@ export default function Contact() {
             <div id={'section-2'} className={'flex flex-col md:flex-row mx-20 mb-20 justify-between text-center'}>
                 <div id={'phone-box'} className={'flex flex-col bg-zinc-900 pb-20 pl-10 pr-10 rounded-3xl border-2 border-zinc-200 mt-10'}>
                     <Image src={'/phone-icon.png'} alt={'Phone Icon'} width={32} height={32} className={'invert mx-auto my-10'}/>
-                    <h2 className={'text-3xl py-2'}>Phone Number</h2>
-                    <h2 className={'text-md md:text-4xl mt-10'}>(908)-829-3169</h2>
+                    <h2 className={'text-3xl py-2'}>Phone Numbers</h2>
+                    <h2 className={'text-md md:text-3xl mt-10'}>(908)-829-3169</h2>
+                    <h2 className={'text-md md:text-3xl mt-10'}>(908)-935-2559</h2>
                 </div>
                 <div id={'address-box'} className={'flex flex-col bg-zinc-900 pb-20 pl-10 pr-10 rounded-3xl border-2 border-zinc-200 mt-10'}>
                     <Image src={'/location-pin-icon.png'} alt={'Location Pin Icon'} width={32} height={32} className={'invert mx-auto my-10'}/>

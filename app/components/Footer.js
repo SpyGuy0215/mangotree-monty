@@ -8,7 +8,7 @@ export default function Footer() {
                 <h2 className={'text-3xl py-2'}>Contact Us</h2>
                 <div id={'contact-footer-phone'} className={'flex flex-row w-fit self-center justify-between py-2'}>
                     <Image src={'/phone-icon.png'} alt={'Phone Icon'} width={24} height={24} className={'invert aspect-square mr-2'}/>
-                    <h2 className={'text-md md:text-xl'}>(908)-829-3169</h2>
+                    <h2 className={'text-md md:text-xl'}>(908)-829-3169 / (908)-935-2559</h2>
                 </div>
                 <div id={'contact-footer-phone'} className={'flex flex-row w-fit self-center justify-between py-2'}>
                     <Image src={'/location-pin-icon.png'} alt={'Location Icon'} width={24} height={0}
