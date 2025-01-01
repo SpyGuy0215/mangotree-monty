@@ -3,13 +3,47 @@
 import Link from "next/link";
 import Image from "next/image";
 import {Divide as Hamburger} from "hamburger-react";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import Footer from "@/app/components/Footer";
 import Banner from "@/app/components/Banner";
+import app from "@/firebaseConfig";
+import {getAnalytics, logEvent, isSupported} from "firebase/analytics";
 
 export default function Home() {
 
     const [isFlyoutOpen, setFlyoutOpen] = useState(false);
+    const [hasSentPageView, setHasSentPageView] = useState(false);
+
+    useEffect(() => {
+        try {
+            handlePageView();
+        }
+        catch (e) {
+            console.error(e); // ensure analytics breaking does not break the site
+        }
+    }, []);
+
+    function handlePageView() {
+        const isDev = process.env.NODE_ENV === 'development';
+        if (!hasSentPageView) {
+            isSupported().then((supported) => {
+                if (supported) {
+                    const analytics = getAnalytics(app);
+                    if(!isDev) {
+                        logEvent(analytics, 'page_view', {
+                            page_title: 'Home',
+                        });
+                    }
+                    else{
+                        logEvent(analytics, 'dev_page_view', {
+                            page_title: 'Home',
+                        })
+                    }
+                }
+            })
+            setHasSentPageView(true);
+        }
+    }
 
     return (
         <div className={'h-dvh dark:[color-scheme:dark]'}>
