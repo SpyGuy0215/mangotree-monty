@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Footer() {
     return (
-        <div id={'footer'} className={'flex flex-col md:pb-0 pt-8 md:pt-0 md:flex-row h-60 bg-black items-center'}>
+        <div id={'footer'} className={'flex flex-col md:pb-0 pt-8 md:pt-0 md:flex-row h-60 bg-black items-center min-h-fit'}>
             <div id={'box-1 contact-footer'} className={'flex flex-col text-white w-full md:w-5/12 text-center'}>
                 <h2 className={'text-3xl py-2'}>Contact Us</h2>
                 <div id={'contact-footer-phone'} className={'flex flex-row w-fit self-center justify-between py-2'}>
@@ -27,13 +27,23 @@ export default function Footer() {
             <div id={'box-2 image-footer'} className={'flex w-full md:w-2/12 relative justify-center items-center'}>
                 <Image src={'/logo.png'} alt={'Logo'} height={200} width={200} className={''}/>
             </div>
-            <div id={'box-3 hours-footer'} className={'flex flex-col w-full md:w-5/12 text-center px-2 pb-12 md:pb-0'}>
+            <div id={'box-3 hours-footer'} className={'flex flex-col w-full md:w-5/12 text-center px-2 pb-12 md:pb-0 text-slate-50'}>
                 <h2 className={'text-3xl py-2'}>Hours of Operation</h2>
-                {/*<h3 className={'text-md md:text-xl pt-2 pb-1'}>Wednesday - Monday</h3>*/}
-                <h3 className={'text-md md:text-xl pt-2 pb-1'}>Monday - Sunday</h3> {/* Special timing - Tuesday open*/}
-                <h3 className={'text-sm md:text-md py-1'}>11:30AM - 2:30PM</h3>
-                <h3 className={'text-sm md:text-md py-1'}>5:00PM - 9:30PM</h3>
-                {/*<h3 className={'text-md md:text-xl py-2'}>Tuesday: Closed</h3>*/} {/* Special timing - Tuesday open*/}
+                <div className={'flex flex-col md:flex-row justify-around'}>
+                    <div id={'weekdays'}>
+                        <h3 className={'text-md md:text-xl pt-2 pb-1 underline'}>Monday - Friday</h3>
+                        <h3 className={'text-sm md:text-md py-1'}>11:30AM - 2:30PM</h3>
+                        <h3 className={'text-sm md:text-md py-1'}>5:00PM - 9:30PM</h3>
+                    </div>
+                    <div id={'Saturday'}>
+                        <h3 className={'text-md md:text-xl pt-2 pb-1 underline'}>Saturday</h3>
+                        <h3 className={'text-sm md:text-md py-1'}>12:00PM - 10PM</h3>
+                    </div>
+                    <div id={'Sunday'}>
+                        <h3 className={'text-md md:text-xl pt-2 pb-1 underline'}>Sunday</h3>
+                        <h3 className={'text-sm md:text-md py-1'}>12:00PM - 9:30PM</h3>
+                    </div>
+                </div>
             </div>
         </div>
     )
