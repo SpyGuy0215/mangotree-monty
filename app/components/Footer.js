@@ -31,9 +31,14 @@ export default function Footer() {
                 <h2 className={'text-3xl py-2'}>Hours of Operation</h2>
                 <div className={'flex flex-col md:flex-row justify-around'}>
                     <div id={'weekdays'}>
-                        <h3 className={'text-md md:text-xl pt-2 pb-1 underline'}>Monday - Friday</h3>
+                        <h3 className={'text-md md:text-xl pt-2 pb-1 underline'}>Monday - Thursday</h3>
                         <h3 className={'text-sm md:text-md py-1'}>11:30AM - 2:30PM</h3>
                         <h3 className={'text-sm md:text-md py-1'}>5:00PM - 9:30PM</h3>
+                    </div>
+                    <div id={'Friday'}>
+                        <h3 className={'text-md md:text-xl pt-2 pb-1 underline'}>Friday</h3>
+                        <h3 className={'text-sm md:text-md py-1'}>11:30AM - 2:30PM</h3>
+                        <h3 className={'text-sm md:text-md py-1'}>5:00PM - 10:30PM</h3>
                     </div>
                     <div id={'Saturday'}>
                         <h3 className={'text-md md:text-xl pt-2 pb-1 underline'}>Saturday</h3>
@@ -41,7 +46,7 @@ export default function Footer() {
                     </div>
                     <div id={'Sunday'}>
                         <h3 className={'text-md md:text-xl pt-2 pb-1 underline'}>Sunday</h3>
-                        <h3 className={'text-sm md:text-md py-1'}>12:00PM - 9:30PM</h3>
+                        <h3 className={'text-sm md:text-md py-1'}>12:00PM - 9:00PM</h3>
                     </div>
                 </div>
             </div>

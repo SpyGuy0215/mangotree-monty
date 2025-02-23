@@ -8,14 +8,27 @@ import {Image} from "@heroui/image";
 import {Chip} from "@heroui/chip";
 import './styles.css';
 
+import {getFirestore, doc} from "firebase/firestore";
+import app from "@/firebaseConfig";
+
 
 export default function SuperAdmin(){
+
+    const db = getFirestore(app);
+
+    // Banner
+    const [bannerEnabled, setBannerEnabled] = useState(true);
 
     // Weekend Special
     const [weekendSpecialEnabled, setWeekendSpecialEnabled] = useState(false);
     const [weekendSpecialButtonText, setWeekendSpecialButtonText] = useState('');
     const [weekendSpecialImageURL, setWeekendSpecialImageURL] = useState('');
     const [isWeekendSpecialImageURLValid, setIsWeekendSpecialImageURLValid] = useState(false);
+
+    function handleBannerVisibilityChange(visible){
+        setBannerEnabled(visible);
+        console.log("Banner enabled: " + visible);
+    }
 
     return(
         <div className={'bg-gray-100 pt-5 h-dvh'}>
@@ -25,7 +38,7 @@ export default function SuperAdmin(){
                 <hr/>
                 <div className={'flex-row justify-between my-2'}>
                     {/*<h3>Visible</h3>*/}
-                    <Switch size={'md'} className={'my-4'}>Visible</Switch>
+                    <Switch size={'md'} className={'my-4'} isSelected={bannerEnabled} onValueChange={handleBannerVisibilityChange}>Visible</Switch>
                     <Input label={"Text"} variant={'bordered'} className={'my-4'}/>
                 </div>
             </div>
