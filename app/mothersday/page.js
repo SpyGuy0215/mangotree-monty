@@ -70,7 +70,7 @@ export default function DiwaliBuffet() {
                     </div>
                 </div>
             </div>
-            <img src={'/diwali-buffet-image.png'} alt={'Diwali Buffet Menu'}
+            <img src={'/Mothers_Day_Special_2025.jpg'} alt={"Mother's Day Special Menu"}
                    className={'pt-24 object-cover w-full mx-auto'}/>
             <Footer/>
         </div>

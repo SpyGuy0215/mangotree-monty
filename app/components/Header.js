@@ -15,17 +15,20 @@ export default function Header({currentPage}) {
 
     const db = getFirestore(app);
     const [weekendSpecialEnabled, setWeekendSpecialEnabled] = useState(false);
+    const [weekendSpecialLabel, setWeekendSpecialLabel] = useState('Weekend Special');
 
     useEffect(() => {
-        const weekendSpecialEnabledRef = doc(collection(db, 'website'), 'weekend_special');
+        const weekendSpecialRef = doc(collection(db, 'website'), 'weekend_special');
         const fetchData = async () => {
-            return await getWithDocRef(weekendSpecialEnabledRef);
+            return await getWithDocRef(weekendSpecialRef);
         }
-        let weekendSpecialEnabledSnap;
+        let weekendSpecialSnap;
         fetchData().then((snap) => {
-            weekendSpecialEnabledSnap = snap;
-            setWeekendSpecialEnabled(weekendSpecialEnabledSnap.data().enabled);
-            console.log(weekendSpecialEnabledSnap.data().enabled);
+            weekendSpecialSnap = snap;
+            setWeekendSpecialEnabled(weekendSpecialSnap.data().enabled);
+            setWeekendSpecialLabel(weekendSpecialSnap.data().label);
+            console.log(weekendSpecialSnap.data().enabled);
+            console.log(weekendSpecialSnap.data().label);
         });
     }, [])
 
@@ -50,7 +53,7 @@ export default function Header({currentPage}) {
                     <Link href={'/weekend-special'} hidden={!weekendSpecialEnabled}
                           className={'bh-fit w-fit my-auto px-3 mr-16 bg-orange-400 mx-auto hover:scale-110 transition ease-in-out' +
                               'shadow-orange-400 shadow-lg'}>
-                        <h2 className={'text-slate-50 hover:text-white py-4 text-xl'}>Weekend Special</h2>
+                        <h2 className={'text-slate-50 hover:text-white py-4 text-xl'}>{weekendSpecialLabel}</h2>
                     </Link>
                     {isHome ?
                         <Link href={'/'} className={'h-fit w-fit my-auto px-3 absolute sm:relative'}>
