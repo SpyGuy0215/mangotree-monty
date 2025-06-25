@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export default function Footer() {
     return (
-        <div id={'footer'} className={'flex flex-col md:pb-0 pt-8 md:pt-0 md:flex-row h-60 bg-black items-center min-h-fit'}>
+        <div id={'footer'} className={'flex flex-col  md:flex-row h-60 bg-black items-center min-h-fit'}>
             <div id={'box-1 contact-footer'} className={'flex flex-col text-white w-full md:w-5/12 text-center'}>
-                <h2 className={'text-3xl py-2'}>Contact Us</h2>
+                <h2 className={'text-4xl md:text-3xl py-2'}>Contact Us</h2>
                 <div id={'contact-footer-phone'} className={'flex flex-row w-fit self-center justify-between py-2'}>
                     <Image src={'/phone-icon.png'} alt={'Phone Icon'} width={24} height={24} className={'invert aspect-square mr-2'}/>
                     <h2 className={'text-md md:text-xl'}>(908)-829-3169 / (908)-935-2559</h2>
