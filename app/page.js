@@ -47,11 +47,11 @@ export default function Home() {
     }
 
     return (
-        <div className={'h-dvh dark:[color-scheme:dark]'}>
+        <div className={'h-screen dark:[color-scheme:dark]'}>
             <Banner/>
             <Header currentPage={'home'}/>
-            <div id={'section-1'} className={'h-fit bg-black'}>
-                <img className={'object-cover h-svh mx-auto'} src={'/open-7-days-large-resized.png'}
+            <div id={'section-1'} className={'h-fit bg-black overflow-hidden'}>
+                <img className={'object-contain scale-[3] h-screen sm:scale-100 mx-auto'} src={'/open-7-days-large-resized.png'}
                      alt={'The Mango Tree - Open Now, 7 Days A Week'}/>
             </div>
             <Footer/>
