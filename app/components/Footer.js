@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Footer() {
     return (
-        <div id={'footer'} className={'flex flex-col  md:flex-row h-60 bg-black items-center min-h-fit'}>
+        <div id={'footer'} className={'flex flex-col pt-4 sm:pt-0 md:flex-row h-60 bg-black items-center'}>
             <div id={'box-1 contact-footer'} className={'flex flex-col text-white w-full md:w-5/12 text-center'}>
                 <h2 className={'text-4xl md:text-3xl py-2'}>Contact Us</h2>
                 <div id={'contact-footer-phone'} className={'flex flex-row w-fit self-center justify-between py-2'}>
@@ -24,7 +24,7 @@ export default function Footer() {
                     </Link>
                 </div>
             </div>
-            <div id={'box-2 image-footer'} className={'flex w-full md:w-2/12 relative justify-center items-center'}>
+            <div id={'box-2 image-footer'} className={'hidden sm:flex w-full md:w-2/12 relative justify-center items-center'}>
                 <Image src={'/logo.png'} alt={'Logo'} height={200} width={200} className={''}/>
             </div>
             <div id={'box-3 hours-footer'} className={'flex flex-col w-full md:w-5/12 text-center px-2 pb-12 md:pb-0 text-slate-50'}>

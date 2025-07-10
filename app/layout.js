@@ -7,12 +7,12 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "The Mango Tree Indian Cuisine",
-  description: "The Mango Tree, coming soon to Montgomery. A brand new Indian restaurant serving quality Indian food.",
+  description: "The Mango Tree, an Indian restaurant in Montgomery, NJ serving quality authentic Indian cuisine.",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={'light'}>
+    <html lang="en" className={'dark'}>
       <body className={inter.className}>
       <Providers>
           {children}
