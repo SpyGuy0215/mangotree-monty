@@ -12,21 +12,21 @@ export default function Contact() {
     const [isFlyoutOpen, setFlyoutOpen] = useState(false);
 
     return(
-        <div className={'h-fit dark:[color-scheme:dark] dark bg-gray-950'}>
+        <div className={'h-fit bg-zinc-200'}> {/* Changed background to bg-zinc-200 */}
             <Banner/>
             <Header currentPage={'contact'} />
             <div id={'section-1'} className={'w-full h-fit py-32 text-center'}>
-                <h2 className={'text-6xl text-slate-50'}>Contact Us</h2>
+                <h2 className={'text-6xl text-slate-900'}>Contact Us</h2>
             </div>
-            <div id={'section-2'} className={'flex flex-col md:flex-row mx-5 md:mx-20 mb-20 justify-between text-center text-slate-50 h-fit'}>
-                <div id={'phone-box'} className={'md:w-5/12 flex flex-col bg-zinc-900 pb-20 px-10 rounded-3xl border-2 border-zinc-200 mt-10'}>
-                    <Image src={'/phone-icon.png'} alt={'Phone Icon'} width={32} height={32} className={'invert mx-auto my-10'}/>
+            <div id={'section-2'} className={'flex flex-col md:flex-row mx-5 md:mx-20 mb-20 justify-between text-center text-slate-900 h-fit'}>
+                <div id={'phone-box'} className={'md:w-5/12 flex flex-col bg-white pb-20 px-10 rounded-3xl border-2 border-zinc-900 mt-10'}> {/* Changed to bg-white for contrast */}
+                    <Image src={'/phone-icon.png'} alt={'Phone Icon'} width={32} height={32} className={'mx-auto my-10'}/>
                     <h2 className={'text-3xl py-2'}>Phone Numbers</h2>
                     <h2 className={'text-md md:text-3xl mt-10'}>(908)-829-3169</h2>
                     <h2 className={'text-md md:text-3xl mt-10'}>(908)-935-2559</h2>
                 </div>
-                <div id={'address-box'} className={'md:w-5/12 flex flex-col bg-zinc-900 pb-20 px-10 rounded-3xl border-2 border-zinc-200 mt-10'}>
-                    <Image src={'/location-pin-icon.png'} alt={'Location Pin Icon'} width={32} height={32} className={'invert mx-auto my-10'}/>
+                <div id={'address-box'} className={'md:w-5/12 flex flex-col bg-white pb-20 px-10 rounded-3xl border-2 border-zinc-900 mt-10'}> {/* Changed to bg-white for contrast */}
+                    <Image src={'/location-pin-icon.png'} alt={'Location Pin Icon'} width={32} height={32} className={'mx-auto my-10'}/>
                     <h2 className={'text-3xl py-2'}>Location</h2>
                     <h2 className={'text-md md:text-4xl mt-10'}>2311 Route 206, Suite 102, Belle Mead NJ</h2>
                 </div>
