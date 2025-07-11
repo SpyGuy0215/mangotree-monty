@@ -43,12 +43,22 @@ export default function Home() {
     }
 
     return (
-        <div className={'h-screen pointer-events-auto select-text'}>
+        <div className={'pointer-events-auto select-text'}>
             <Banner/>
             <Header currentPage={'home'}/>
             <div id={'section-1'} className={'h-[80vh] sm:h-[95vh] bg-white overflow-hidden'}>
-                <div id={'video-container'} className={'h-[80vh] sm:h-[95vh]'}>
-                    <video src={'/videos/main-background.mp4'} autoPlay loop muted className={'w-full h-full object-cover'}/>
+                <div id={'video-container'} className={'h-[80vh] sm:h-[95vh]'} dangerouslySetInnerHTML={{
+                    __html: `
+        <video
+          loop
+          muted
+          autoPlay
+          playsInline
+          src="/videos/main-bg.mp4"
+          class="w-full h-full object-cover"
+        />
+      `
+                }}>
                 </div>
                 <div id={'video-overlay'}
                      className={'absolute inset-0 flex h-[80vh] sm:h-[95vh] bg-black bg-opacity-40 justify-center items-center'}>
