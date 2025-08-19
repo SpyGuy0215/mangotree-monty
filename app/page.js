@@ -54,9 +54,9 @@ export default function Home() {
           muted
           autoPlay
           playsInline
-          src="/videos/main-bg.mp4"
+          src="/videos/main-bg-compressed.mp4"
           preload="auto"
-          poster="/images/vada.jpg"
+          poster="/videos/main-bg-thumbnail.jpg"
           class="w-full h-full object-cover"
         />
       `
