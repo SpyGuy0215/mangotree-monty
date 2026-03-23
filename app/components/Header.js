@@ -57,8 +57,8 @@ export default function Header({currentPage}) {
     }
 
     const [isFlyoutOpen, setFlyoutOpen] = useState(false);
-    return (<div id={'menu-container'} className={'fixed top-0 z-20 w-screen h-fit flex flex-col pointer-events-auto'}>
-        <div id={'top-menu'} className={'w-full h-24 absolute z-20 flex flex-row backdrop-blur-md bg-zinc-900' +
+    return (<div id={'menu-container'} className={'sticky top-0 z-20 w-full h-fit flex flex-col pointer-events-auto'}>
+        <div id={'top-menu'} className={'w-full h-24 relative z-20 flex flex-row backdrop-blur-md bg-zinc-900' +
             ' ' + (scrolled ? 'bg-opacity-95' : 'bg-opacity-50') + ' transition-all duration-500 ease-in-out'}>
             <div id={'logo-container'} className={'relative aspect-square md:ml-6'}>
                 <Image src={'/logo.png'} alt={'Logo'} fill/>

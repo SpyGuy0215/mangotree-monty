@@ -38,7 +38,7 @@ export default function Banner() {
     }
 
     if (isEnabled) {
-        return (<div id={'banner'} className={'w-full h-12 bg-black text-white flex flex-row justify-center items-center'}>
+        return (<div id={'banner'} className={'w-full h-12 z-40 bg-black text-white flex flex-row justify-center items-center'}>
                 <h2 className={'text-center text-md md:text-3xl text-orange-300 underline underline-offset-2'}>
                     {bannerMessage}
                 </h2>
